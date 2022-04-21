@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: red;
+    --secondary-color: #18d321;
+    --tertiary-color: #000000;
+  }
+
+  body {
+    background-color: var(--tertiary-color);
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--primary-color);
+  }
+
+  header {
+    margin: 30px 25px 30px 25px;
+    padding: 20px 35px;
+    background-color: var(--tertiary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    top: 0;
+    color: var(--secondary-color);
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    z-index: 9999;
+}
+
+header h1{
+    font-weight: bold;
+    font-size: 36px;
+    padding: var(--secondary-color);
+    color: var(--primary-color);
+    margin: 0;
+    
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    background: var(--tertiary-color);
+    width: 100%;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer h2 {
+    color: var(--secondary-color);
+    font-size: 30px;
+    margin: 0;
+}
+
+.work {
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    margin: 30px 30px 30px 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 45px;
+    flex: 1 30%;
+}
+
+.work-title {
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 45px;
+
+}
+
+.application-title {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+.run-buddy img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 450px 0 450px ;
+}
+
+.about {
+    font-weight: bold;
+    font-size: 24px;
+    background-color: yellow;
+    color: var(--secondary-color);
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: initial;
+    top: 0;
+}
+
+.about-me {
+    margin: 20px 0;
+    line-height: 2;
+    font-size: 16px;
+    font-style: normal;
+    color: var(--tertiary-color);
+    display: inline;
+    justify-content: left;
+    flex-wrap: wrap;
+}
