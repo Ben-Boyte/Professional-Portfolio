@@ -5,8 +5,8 @@
 }
 
 :root {
-    --primary-color: red;
-    --secondary-color: #18d321;
+    --primary-color: rgb(145, 105, 236);
+    --secondary-color: #29f800;
     --tertiary-color: #000000;
   }
 
@@ -73,7 +73,7 @@ footer h2 {
 .work {
     background-color: var(--primary-color);
     color: var(--tertiary-color);
-    margin: 30px 30px 30px 30px;
+    margin: 60px 60px 60px 60px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -92,8 +92,14 @@ footer h2 {
 
 .application-title {
     display: flex;
-    justify-content: left;
-    flex-wrap: wrap;
+    justify-content: center;
+}
+
+    .subtitle  {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+
 }
 
 .run-buddy img {
@@ -101,28 +107,45 @@ footer h2 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 0 450px 0 450px ;
+    margin: 0 450px 60px 450px ;
 }
 
 .about {
     font-weight: bold;
     font-size: 24px;
-    background-color: yellow;
+    background-color: var(--primary-color);
     color: var(--secondary-color);
-    margin: 0;
+    margin: 60px 60px 60px 60px;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: initial;
+    justify-content: center;
+    flex-wrap: wrap;
     top: 0;
+}
+
+.about-title {
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 45px;
 }
 
 .about-me {
     margin: 20px 0;
-    line-height: 2;
+    line-height: 1;
     font-size: 16px;
     font-style: normal;
     color: var(--tertiary-color);
-    display: inline;
-    justify-content: left;
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+}
+
+
+.application2 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 450px 60px 450px ;
 }
