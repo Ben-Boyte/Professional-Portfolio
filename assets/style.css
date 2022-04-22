@@ -74,9 +74,6 @@ footer h2 {
     background-color: var(--primary-color);
     color: var(--tertiary-color);
     margin: 60px 60px 60px 60px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     padding: 45px;
     flex: 1 30%;
 }
@@ -95,7 +92,7 @@ footer h2 {
     justify-content: center;
 }
 
-    .subtitle  {
+.subtitle  {
     display: flex;
     justify-content: center;
     font-weight: bold;
@@ -148,4 +145,20 @@ footer h2 {
     justify-content: center;
     flex-wrap: wrap;
     margin: 0 450px 60px 450px ;
+}
+
+.src-img {
+    width: 75%;
+    display: block;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 80px 0 80px;
+}
+
+.src-img-two {
+    width: 15%;
+    display: block;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 325px 0 325px;
 }
