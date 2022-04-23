@@ -7,7 +7,7 @@
 :root {
     --primary-color: rgb(145, 105, 236);
     --secondary-color: #e8f800;
-    --tertiary-color: #005319;
+    --tertiary-color: #000;
   }
 
   body {
@@ -17,9 +17,8 @@
   }
 
   header {
-    margin: 30px 25px 30px 25px;
+    margin: 0px 0px 30px 0px;
     padding: 20px 35px;
-    background-color: var(--tertiary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -28,6 +27,7 @@
     background-size: cover;
     background-position: 80%;
     background-attachment: fixed;
+    
     z-index: 9999;
 }
 
@@ -38,6 +38,11 @@ header h1{
     color: var(--primary-color);
     margin: 0;
     
+}
+
+header a {
+    color: #e8f800;
+    font-style: italic;
 }
 
 header nav ul {
@@ -56,7 +61,7 @@ header nav ul li a {
 }
 
 footer {
-    background: var(--primary-color);
+    background: var(--tertiary-color);
     display: flex;
     padding: 20px 0 0 0;
     justify-content: space-between;
@@ -64,32 +69,40 @@ footer {
     margin: 0 750px 0 750px;
 }
 
-footer h2 {
+footer h3 {
     color: var(--secondary-color);
     font-size: 30px;
+    margin: 0 0 0 15px;
     
 }
 
+.contact-me h3 {
+    color: var(--secondary-color);
+}
+
 .work {
-    background-color: var(--primary-color);
-    color: #000;
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
     margin: 60px 60px 60px 60px;
     padding: 45px;
     flex: 1 30%;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .work-title {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     font-size: 45px;
-
+    margin: 0 0 25px 0;
 }
 
 .application-title {
     display: flex;
     justify-content: center;
+    color: lightblue;
+    font-style: italic;
 }
 
 .subtitle  {
@@ -162,3 +175,108 @@ footer h2 {
     flex-wrap: wrap;
     margin: 0 325px 0 325px;
 }
+
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+  
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+  
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+  
+    header nav ul li a {
+        font-size: 20px;
+    }
+  
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+    }
+  
+    .hero-cta, .hero-form {
+        width: 100%;
+    }
+  
+    .hero-cta {
+        text-align: center;
+    }
+  
+    .section-title {
+        width: 80%;
+    }
+  
+    .trainer {
+        flex: 0 70%;
+    }
+  
+    .contact-info iframe{
+      flex: 1 100%
+    }
+  
+    }
+  
+    @media screen and (max-width:768px) {
+       section {
+           padding: 30px 15px;
+       }
+       .step h3 {
+           flex: 1 100%;
+           text-align: center;
+       }
+  
+       .step-info {
+           flex: 2 100%;
+           text-align: center;
+           justify-content: center;
+       }
+  
+       .step-img {
+           flex: 0 32%;
+           margin-right: 0;
+           margin-top: 15px;
+           margin-bottom: 15px;
+       }
+       .step-text {
+           flex: 100%;
+       }
+       
+    }
+    @media screen and (max-width: 575px) {
+      .hero-form button {
+          width: 100%;
+        }
+      
+        .section-title {
+          width: 95%;
+        }
+      
+        .intro p {
+          width: 100%;
+        }
+      
+        .trainer {
+          flex: 0 100%;
+        }
+      
+        .contact-info {
+          text-align: center;
+        }
+      
+        .contact-info > * {
+          flex: 0 100%;
+        }
+  
+        .contact-form {
+          order: 3;
+        }
+    }
