@@ -6,7 +6,7 @@
 
 :root {
     --primary-color: rgb(145, 105, 236);
-    --secondary-color: #e8f800;
+    --secondary-color: #ffffff;
     --tertiary-color: #000;
   }
 
@@ -101,7 +101,7 @@ footer h3 {
 .application-title {
     display: flex;
     justify-content: center;
-    color: lightblue;
+    color: rgb(84, 193, 230);
     font-style: italic;
 }
 
